@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Ahmad Zulkiflimansyah Haqqi</title>
+    <!-- Bootstrap 5 CDN & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <style>
+        body {
+            background-color: #f4f7fe;
+            color: #2b3674;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar-custom {
+            background-color: #111c44;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .profile-card-flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin-top: 3rem;
+            border: 1px solid rgba(224, 230, 237, 0.6);
+        }
+
+        .profile-img-box {
+            flex: 0 0 220px;
+            text-align: center;
+        }
+
+        .profile-img-box img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(13, 110, 253, 0.15);
+            border: 4px solid #fff;
+        }
+
+        .profile-details {
+            flex: 1;
+            margin-left: 2.5rem;
+        }
+
+        .badge-untirta {
+            background-color: #fff9e6;
+            color: #856404;
+            border: 1px solid #ffeba8;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge-untirta img {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #ffffff;
+            border-top: 1px solid #e0e6ed;
+        }
+
+        @media (max-width: 768px) {
+            .profile-card-flex {
+                flex-direction: column;
+                text-align: center;
+                padding: 1.5rem;
+            }
+
+            .profile-details {
+                margin-left: 0;
+                margin-top: 1.5rem;
+            }
+
+            .profile-img-box img {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="bi bi-person-badge-fill me-2"></i>Belajar HTML
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="index.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pendidikan.html">Pendidikan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="keahlian.html">Keahlian</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-auto">
+        <section class="profile-card-flex">
+            <div class="profile-img-box">
+                <img src="IMG-20231012-WA0047.jpg" alt="Ahmad Zulkiflimansyah Haqqi">
+            </div>
+            <div class="profile-details">
+                <span class="badge-untirta mb-2">
+                    <img src="LOGO UNTIRTA.jpg" alt="Logo UNTIRTA">
+                    Universitas Sultan Ageng Tirtayasa
+                </span>
+                <h1 class="fw-bold display-6 text-dark mt-2">Ahmad Zulkiflimansyah Haqqi</h1>
+                <p class="text-primary fw-semibold fs-5 mb-3">NIM: 3337250075</p>
+                <p class="text-muted leading-relaxed">
+                    Mahasiswa Universitas Sultan Ageng Tirtayasa yang berfokus pada pengembangan aplikasi web, pemrograman terstruktur, serta eksplorasi teknologi frontend dan analisis data.
+                </p>
+                <div class="d-flex gap-2 justify-content-md-start justify-content-center mt-4">
+                    <a href="pendidikan.html" class="btn btn-primary px-4 py-2 rounded-pill">
+                        Lihat Pendidikan <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="py-3 text-center text-muted">
+        <small>&copy; 2026 Ahmad Zulkiflimansyah Haqqi - UNTIRTA</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

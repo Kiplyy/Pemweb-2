@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keahlian - Ahmad Zulkiflimansyah Haqqi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <style>
+        body {
+            background-color: #f4f7fe;
+            color: #2b3674;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar-custom {
+            background-color: #111c44;
+        }
+
+        .card-custom {
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Flexbox Layout untuk Badge Keahlian */
+        .skills-flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-badge {
+            background: #ffffff;
+            border: 1px solid #e0e6ed;
+            color: #2b3674;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            transition: all 0.2s ease;
+        }
+
+        .skill-badge:hover {
+            border-color: #0d6efd;
+            color: #0d6efd;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #ffffff;
+            border-top: 1px solid #e0e6ed;
+        }
+
+        /* --- Media Query Layar Kecil --- */
+        @media (max-width: 576px) {
+            .skills-flex-container {
+                justify-content: center;
+            }
+            .skill-badge {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="bi bi-person-badge-fill me-2"></i>Belajar HTML
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pendidikan.html">Pendidikan</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="keahlian.html">Keahlian</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="fw-bold mb-4"><i class="bi bi-tools text-primary me-2"></i>Keahlian & Kompetensi</h2>
+
+        <div class="card card-custom p-4 mb-4">
+            <h5 class="fw-bold text-muted mb-3">Teknologi & Bahasa Pemrograman</h5>
+            <div class="skills-flex-container">
+                <div class="skill-badge"><i class="bi bi-filetype-html text-danger fs-5"></i> HTML5 & CSS3</div>
+                <div class="skill-badge"><i class="bi bi-bootstrap-fill text-primary fs-5"></i> Bootstrap 5</div>
+                <div class="skill-badge"><i class="bi bi-layout-split text-info fs-5"></i> Flexbox & Media Query</div>
+                <div class="skill-badge"><i class="bi bi-filetype-js text-warning fs-5"></i> JavaScript</div>
+                <div class="skill-badge"><i class="bi bi-bar-chart-fill text-success fs-5"></i> R & RStudio</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-3 text-center text-muted">
+        <small>&copy; 2026 Ahmad Zulkiflimansyah Haqqi - UNTIRTA</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
